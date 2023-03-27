@@ -1,16 +1,13 @@
-import { useState } from 'react' 
-import ' ../styles/Title.css'
+import { useState } from 'react'
+import '../styles/Title.css'
 
-function Title() {
+function Title(props) {
 
-const [count, setCount] = useState (0)
-
-return (
-
-<div className="Title"></div>
-
-)
-
+  return (
+    <div className="Title">
+      <p>{props.children}</p>
+    </div>
+  )
 }
 
 export default Title
