@@ -43,7 +43,7 @@ function App() {
       <table>
         <tr>
           <td>
-            <Button id='generate' callback={generateJoke}>Generate Joke</Button>
+            <Button id='generate' callback={generateJoke}>CARICA JOKE</Button>
             <Dropdown id='dropdown' values={categories}></Dropdown>
           </td>
           <td>
@@ -52,7 +52,7 @@ function App() {
         </tr>
         <tr>
           <td></td>
-          <td><Button id='clipboard' callback={copyJoke} variant={clicked === true ? undefined : "disabled"}>Copy to clipboard</Button></td>
+          <td><Button id='clipboard' callback={copyJoke} variant={clicked === true ? undefined : "disabled"}>COPIA JOKE</Button></td>
         </tr>
       </table>
     </div>
