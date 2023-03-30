@@ -38,23 +38,18 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <div className="App" align="center">
       <Title>Chuck Norris Joke Generator</Title>
-      <table>
-        <tr>
-          <td>
-            <Button id='generate' callback={generateJoke}>CARICA JOKE</Button>
-            <Dropdown id='dropdown' values={categories}></Dropdown>
-          </td>
-          <td>
+
+            
+
             <JokeText id='JokeText'>{joke}</JokeText>
-          </td>
-        </tr>
-        <tr>
-          <td></td>
-          <td><Button id='clipboard' callback={copyJoke} variant={clicked === true ? undefined : "disabled"}>COPIA JOKE</Button></td>
-        </tr>
-      </table>
+
+            <Dropdown id='dropdown' values={categories}></Dropdown><br></br>
+
+            <Button id='generate' callback={generateJoke}>CARICA JOKE</Button><br></br><br></br>
+      <Button id='clipboard' callback={copyJoke} variant={clicked === true ? undefined : "disabled"}>COPIA JOKE</Button>
+
     </div>
   )
 }
